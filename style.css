@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #13233a;
-  background: #f4f7fb;
+  background: #f4f9ff;
   line-height: 1.6;
 }
 
@@ -20,13 +20,14 @@ a {
 }
 
 .site-header {
-  background: #071b33;
-  color: white;
+  background: #eaf7ff;
+  color: #071b33;
   padding: 18px 0;
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(7,27,51,0.12);
+  border-bottom: 1px solid #cfe8f8;
 }
 
 .site-header .wrap {
@@ -36,17 +37,23 @@ a {
   gap: 18px;
 }
 
+.brand {
+  text-decoration: none;
+}
+
 .brand strong {
   display: block;
-  font-size: 34px;
+  font-size: 38px;
   line-height: 1;
   letter-spacing: 1px;
+  color: #1d75bd;
 }
 
 .brand span {
   display: block;
   font-size: 14px;
-  color: #d7e7ff;
+  color: #24577a;
+  font-weight: 700;
 }
 
 nav {
@@ -57,7 +64,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #071b33;
   text-decoration: none;
   font-weight: 700;
   font-size: 15px;
@@ -137,10 +144,6 @@ h3 {
   border-radius: 8px;
   font-weight: 800;
   box-shadow: 0 8px 20px rgba(45,127,229,0.28);
-}
-
-.btn:hover {
-  transform: translateY(-1px);
 }
 
 .btn-alt {
@@ -296,17 +299,4 @@ footer a {
   .hero {
     padding: 60px 0;
   }
-}.logo-brand {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logo-brand img {
-  height: 62px;
-  width: auto;
-  display: block;
-  background: white;
-  padding: 6px;
-  border-radius: 10px;
 }
