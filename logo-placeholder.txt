@@ -1,0 +1,1 @@
+Logo upload note: GitHub mobile/browser does not let ChatGPT transfer chat images into this repo through the text file API. Upload the logo image manually as logo.png, then update the page headers to reference it.
