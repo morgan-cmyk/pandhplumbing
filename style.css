@@ -296,4 +296,17 @@ footer a {
   .hero {
     padding: 60px 0;
   }
+}.logo-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-brand img {
+  height: 62px;
+  width: auto;
+  display: block;
+  background: white;
+  padding: 6px;
+  border-radius: 10px;
 }
