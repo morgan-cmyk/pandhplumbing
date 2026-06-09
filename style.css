@@ -104,11 +104,9 @@ img {
 }
 
 .header-cert img {
-  width: 56px;
-  height: 46px;
-  object-fit: contain;
-  border-radius: 5px;
-  background: #ffffff;
+  display: block;
+  width: 58px;
+  height: auto;
 }
 
 .header-cert strong {
@@ -882,10 +880,10 @@ p {
 }
 
 .footer-cert img {
-  width: 48px;
-  height: 38px;
-  object-fit: contain;
-  border-radius: 5px;
+  display: block;
+  width: 50px;
+  height: auto;
+  border-radius: 3px;
   background: #ffffff;
 }
 
@@ -957,8 +955,7 @@ p {
   }
 
   .header-cert img {
-    width: 48px;
-    height: 38px;
+    width: 54px;
   }
 
   .header-cert strong,
