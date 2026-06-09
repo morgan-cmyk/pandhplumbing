@@ -10,50 +10,132 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Plumber",
-    "name": "P&H Plumbing and Heating Limited",
-    "url": "https://pandhplumbing.uk",
-    "image": "https://pandhplumbing.uk/assets/work/luxury-bathroom-freestanding-bath.jpg",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Derby",
-      "addressRegion": "Derbyshire",
-      "addressCountry": "GB"
-    },
-    "identifier": [
-      "Company No. 14750643",
-      "Gas Safe Registration No. 561480"
-    ],
-    "areaServed": [
-      "Derby",
-      "Derbyshire",
-      "Mickleover",
-      "Littleover",
-      "Allestree",
-      "Duffield",
-      "Quarndon",
-      "Repton",
-      "Melbourne",
-      "Belper",
-      "Ashbourne"
-    ],
-    "sameAs": [
-      "https://www.instagram.com/ph_plumbing_and_heating_ltd?igsh=MWFsemRtNTBsbXM5dQ%3D%3D&utm_source=qr"
-    ],
-    "contactPoint": [
+    "@graph": [
       {
-        "@type": "ContactPoint",
-        "name": "Morgan Hallas",
-        "telephone": "+447341550483",
-        "email": "Morgan@pandhplumbing.uk",
-        "contactType": "customer enquiries"
+        "@type": "Plumber",
+        "@id": "https://pandhplumbing.uk/#business",
+        "name": "P&H Plumbing and Heating Limited",
+        "legalName": "P&H Plumbing and Heating Limited",
+        "url": "https://pandhplumbing.uk/",
+        "logo": "https://pandhplumbing.uk/assets/brand/ph-logo.png",
+        "image": [
+          "https://pandhplumbing.uk/assets/work/luxury-bathroom-freestanding-bath.jpg",
+          "https://pandhplumbing.uk/assets/work/marble-double-vanity-installation.jpg",
+          "https://pandhplumbing.uk/assets/boilers/ideal-boiler-installation.jpg"
+        ],
+        "telephone": [
+          "+447341550483",
+          "+447989224394"
+        ],
+        "email": [
+          "Morgan@pandhplumbing.uk",
+          "Liam@pandhplumbing.uk"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Derby",
+          "addressRegion": "Derbyshire",
+          "addressCountry": "GB"
+        },
+        "areaServed": [
+          { "@type": "Place", "name": "Derby" },
+          { "@type": "Place", "name": "Derbyshire" },
+          { "@type": "Place", "name": "Mickleover" },
+          { "@type": "Place", "name": "Littleover" },
+          { "@type": "Place", "name": "Allestree" },
+          { "@type": "Place", "name": "Duffield" },
+          { "@type": "Place", "name": "Quarndon" },
+          { "@type": "Place", "name": "Repton" },
+          { "@type": "Place", "name": "Melbourne" },
+          { "@type": "Place", "name": "Belper" },
+          { "@type": "Place", "name": "Ashbourne" }
+        ],
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "name": "Company number",
+            "value": "14750643"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Gas Safe registration",
+            "value": "561480"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/ph_plumbing_and_heating_ltd?igsh=MWFsemRtNTBsbXM5dQ%3D%3D&utm_source=qr"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "name": "Morgan Hallas",
+            "telephone": "+447341550483",
+            "email": "Morgan@pandhplumbing.uk",
+            "contactType": "customer enquiries",
+            "areaServed": "GB"
+          },
+          {
+            "@type": "ContactPoint",
+            "name": "Liam Pashley",
+            "telephone": "+447989224394",
+            "email": "Liam@pandhplumbing.uk",
+            "contactType": "customer enquiries",
+            "areaServed": "GB"
+          }
+        ],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Plumbing repairs" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Boiler installation and servicing" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Heating system repairs and upgrades" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Bathroom renovations and premium bathroom installations" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Commercial plumbing" }
+          }
+        ]
       },
       {
-        "@type": "ContactPoint",
-        "name": "Liam Pashley",
-        "telephone": "+447989224394",
-        "email": "Liam@pandhplumbing.uk",
-        "contactType": "customer enquiries"
+        "@type": "WebSite",
+        "@id": "https://pandhplumbing.uk/#website",
+        "url": "https://pandhplumbing.uk/",
+        "name": "P&H Plumbing and Heating Limited",
+        "publisher": { "@id": "https://pandhplumbing.uk/#business" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://pandhplumbing.uk/#webpage",
+        "url": "https://pandhplumbing.uk/",
+        "name": "P&H Plumbing and Heating Limited | Derby Plumbers & Heating Engineers",
+        "isPartOf": { "@id": "https://pandhplumbing.uk/#website" },
+        "about": { "@id": "https://pandhplumbing.uk/#business" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://pandhplumbing.uk/assets/work/luxury-bathroom-freestanding-bath.jpg"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://pandhplumbing.uk/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://pandhplumbing.uk/"
+          }
+        ]
       }
     ]
   }
