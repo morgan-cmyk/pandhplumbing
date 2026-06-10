@@ -386,6 +386,16 @@ p {
   object-fit: cover;
 }
 
+.ufh-photo-card {
+  min-height: 0;
+  height: 300px;
+}
+
+.ufh-photo-card img {
+  min-height: 0;
+  object-position: center 58%;
+}
+
 .image-collage {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -408,7 +418,10 @@ p {
 }
 
 .radiator-collage img {
-  object-position: center 48%;
+  height: 255px;
+  object-fit: contain;
+  object-position: center;
+  background: #f6f8fb;
 }
 
 .hero-panel h2 {
@@ -652,6 +665,12 @@ p {
   object-fit: cover;
   object-position: center;
   border-radius: 6px;
+}
+
+.radiator-preview img {
+  height: 210px;
+  object-fit: contain;
+  background: #f6f8fb;
 }
 
 .process-gallery {
@@ -1095,6 +1114,15 @@ p {
     height: 150px;
   }
 
+  .radiator-collage img {
+    height: 220px;
+    object-fit: contain;
+  }
+
+  .ufh-photo-card {
+    height: 240px;
+  }
+
   .trust-strip {
     margin-top: 0;
     padding-top: 14px;
@@ -1124,6 +1152,11 @@ p {
 
   .mini-gallery img {
     height: 112px;
+  }
+
+  .radiator-preview img {
+    height: 180px;
+    object-fit: contain;
   }
 
   .cookie-banner {
